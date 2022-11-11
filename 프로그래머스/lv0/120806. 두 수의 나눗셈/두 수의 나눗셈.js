@@ -1,1 +1,3 @@
-const solution = (num1, num2) => (num1 / num2 * 1000) << 0
+function solution(num1, num2) {
+    return Math.trunc(num1 / num2 * 1000);
+}
