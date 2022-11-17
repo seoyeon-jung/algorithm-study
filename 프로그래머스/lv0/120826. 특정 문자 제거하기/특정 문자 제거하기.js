@@ -1,5 +1,4 @@
 function solution(my_string, letter) {
-    var answer = '';
-    answer = [...my_string].filter(a => a != letter).join("")
+    let answer = my_string.split(letter).join('')
     return answer;
 }
