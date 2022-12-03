@@ -1,1 +1,9 @@
-const solution = (s1, s2) => s1.filter((a,i) => s2.includes(a)).length
+function solution(s1, s2) {
+    var answer = 0;
+    for (var i = 0; i < s1.length; i++){
+        for (var j = 0; j < s2.length; j++){
+            if(s1[i] === s2[j]) answer++;
+        }
+    }
+    return answer;
+}
