@@ -11,8 +11,5 @@ function solution(arr, divisor) {
         }
     }
     
-    if (answer.length === 0) {
-        return [-1];
-    }
-    else return answer.sort((a, b) => a - b);
+    return (answer.length === 0) ? [-1] : answer.sort((a, b) => a - b)
 }
