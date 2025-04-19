@@ -1,10 +1,5 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.ArrayList;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 public class Main {
 
@@ -16,11 +11,6 @@ public class Main {
 
         int N = Integer.parseInt(st.nextToken());
         int K = Integer.parseInt(st.nextToken());
-
-        // 순서대로 K번째 사람 제거 (N명이 제거될때까지)
-        // 1. list 통해서 k번째 사람 제거
-        // 2. 제거 위치 계산 (현재 위치 + K)해서 k번째 사람 제거
-        // 제거를 반복해야한다
 
         int index = 0; // 현재 위치 변수
         ArrayList<Integer> list = new ArrayList<>(); // list 형식으로 N명 리스트화
